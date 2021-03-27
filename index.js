@@ -27,21 +27,22 @@ function mapToSquare(array){
     return newArray
 }
 
-// function reduceToTotal(array, start=0){
-//     let memo = start
-//     for(i = 0; i < array.length; i++){
-//         memo += array[i]
-//     }
-//     return memo
-// } jfc i do not understand what is wrong with this implementation, or how it substantively differs from the one below. 
-
-function reduceToTotal(src, startingPoint=0) {
-    let total = startingPoint
-    for (let i = 0; i < src.length; i++ ) {
-      total = total + src[i]
+function reduceToTotal(array, start=0){
+    let memo = start
+    for(let i = 0; i < array.length; i++){
+        memo += array[i]
     }
-    return total
-  }
+    return memo
+} 
+// jfc i do not understand what is wrong with this implementation, or how it substantively differs from the one below. 
+
+// function reduceToTotal(src, startingPoint=0) {
+//     let total = startingPoint
+//     for (let i = 0; i < src.length; i++ ) {
+//       total = total + src[i]
+//     }
+//     return total
+//   }
 
   function reduceToAllTrue(array){
     for(let i = 0; i < array.length; i++){
